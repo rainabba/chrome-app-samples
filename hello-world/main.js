@@ -19,5 +19,8 @@ chrome.app.runtime.onLaunched.addListener(function() {
       left: Math.round((screenWidth-width)/2),
       top: Math.round((screenHeight-height)/2)
     }
+  },
+  function(win) {
+    console.log("BOOYAH", win);
   });
 });
